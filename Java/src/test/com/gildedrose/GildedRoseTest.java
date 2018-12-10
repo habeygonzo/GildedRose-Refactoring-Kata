@@ -11,7 +11,9 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals("fixme", app.items[0].name);
+        // This doesn't really test anything (apart that the name isn't changed), but the goblin in the corner probably
+        // had a good reason for putting it here.
+        assertEquals("foo", app.items[0].name);
     }
 
     @Test
